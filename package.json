@@ -10,9 +10,13 @@
     "@types/node": "^16.18.52",
     "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
+    "i": "^0.3.7",
+    "npm": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.16.0",
     "react-scripts": "5.0.1",
+    "scss": "^0.2.4",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +24,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "generate-types": "typed-scss-modules --outDir ./src/styles/ ./src/styles/styles.module.scss"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +44,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "sass-loader": "^13.3.2",
+    "typed-scss-modules": "^7.1.4",
+    "webpack": "^5.88.2"
   }
 }

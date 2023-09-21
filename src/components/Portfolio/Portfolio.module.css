@@ -1,0 +1,347 @@
+.block {
+    /*background: #F1F1F1;*/
+    padding-left: 100px;
+    padding-bottom: 12px;
+}
+
+.icon_wrappers {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.icon_wrappers svg {
+    color: #1C1C1C;
+    width: 122.93px;
+    height: 80px;
+}
+
+.main_icon {
+    margin-top: 15px;
+}
+
+.bold_span {
+    color: #1C1C1C;
+    /*font-family: FuturaDemiC;*/
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu {
+    color: #1C1C1C;
+    /*font-family: FuturaBookC;*/
+    font-size: 32px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-right: 116px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu span {
+    color: #1C1C1C;
+}
+
+.btn {
+    display: flex;
+    padding: 12px 40px 8px 40px;
+    width: auto;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    border: 2px solid #1C1C1C;
+    color: #1C1C1C;
+    /*font-family: FuturaDemiC;*/
+    font-size: 20px;
+    font-weight: 600;
+    height: 43px;
+}
+
+.leave_request {
+    margin-top: 18px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin-top: 42px;
+    gap: 91px;
+}
+
+.content_left {
+    display: flex;
+    align-items: flex-start;
+    gap: 193px;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.selected {
+    color: #1C1C1C;
+    text-decoration-line: underline;
+}
+
+li {
+    color: #8D8D8D;
+    /*font-family: FuturaBookC;*/
+    font-size: 20px;
+    font-weight: 400;
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.about_section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.content_center {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.btn_normal {
+    height: 43px;
+    width: 240px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.content_center button {
+    padding: 12px 40px 10px 40px;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid #1C1C1C;
+    color: #1C1C1C;
+    /*font-family: FuturaBookC;*/
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+/*.img_wrapper {*/
+/*    width: 1212px;*/
+/*    height: 680px;*/
+/*}*/
+
+img {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    object-fit: cover;
+}
+
+p {
+    color: #1C1C1C;
+    /*font-family: FuturaBookC;*/
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.next_btn {
+    color: #1C1C1C;
+    /*font-family: FuturaDemiC;*/
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    background: none;
+    padding: 0;
+    width: auto;
+}
+
+a {
+    color: #1C1C1C;
+    /*font-family: FuturaDemiC;*/
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.logo_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 83px;
+}
+.logo_text {
+    color: #8D8D8D;
+    text-transform: uppercase;
+    font-size: 9px;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 414px) {
+    .block {
+        padding-right: 100px;
+        padding-left: 100px;
+        background: url('../../assets/Моб версия_MGT_оригинал-04.png'), lightgray 50% / cover no-repeat;
+        padding-bottom: 0;
+        position: relative;
+    }
+
+   .footer {
+       display: none;
+   }
+
+   .content_center {
+       display: none;
+   }
+
+   .img_wrapper {
+       display: none;
+   }
+
+   ul {
+       margin-top: 293px;
+   }
+
+   .selected {
+       color: #FFFFFF;
+       text-decoration: none;
+   }
+
+   li {
+       color: #FFF;
+       /*font-family: FuturaDemiC;*/
+       font-size: 84px;
+       font-weight: 600;
+       line-height: 99%;
+       text-transform: uppercase;
+   }
+
+   .main_icon {
+       display: flex;
+       gap: 12px;
+       align-items: center;
+   }
+
+   .icon_wrappers {
+       color: #FFFFFF;
+   }
+
+   .hide {
+       display: flex;
+   }
+
+   .logo_wrapper {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 70px;
+       padding-bottom: 94px;
+   }
+
+   .phone_number {
+       display: none;
+   }
+
+   .btn {
+       width: 334px;
+       height: 71px;
+       background: none;
+       padding: 0;
+       color: #FFFFFF;
+       border: 1px solid #FFFFFF;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+   }
+
+   .icons {
+       display: flex;
+       align-items: center;
+       gap: 160px;
+   }
+
+   .icons_wrapper {
+       margin-top: 934px;
+       display: flex;
+       gap: 297px;
+       align-items: center;
+   }
+
+   .next_section {
+       display: flex;
+       align-items: flex-start;
+       justify-content: center;
+       padding: 0 29px;
+       gap: 23px;
+       position: absolute;
+       left: 50%;
+       right: 50%;
+       transform: translate(50%, 50%);
+   }
+
+   .line {
+       width: 12px;
+       height: 376px;
+       background: #FFFFFF;
+   }
+
+   .leave_request {
+       margin-top: 48px;
+   }
+
+   .next_btn {
+       transform: rotate(270deg);
+       color: #FFF;
+       /*font-family: FuturaDemiC;*/
+       font-size: 47px;
+       font-weight: 600;
+       text-transform: uppercase;
+       padding: 0 0 0 220px;
+       margin: 0;
+       border: none;
+       border-top: 12px solid white;
+       padding-top: 23px;
+       border-radius: 0;
+   }
+
+   .menu span {
+   color: #FFFFFF;
+   }
+
+   .logo_section {
+       margin: 0;
+   }
+
+   .logo_span {
+       color: #FFF;
+       text-align: right;
+       /*font-family: FuturaBookC;*/
+       font-size: 14px;
+       /*font-style: italic;*/
+       font-weight: 400;
+       text-transform: uppercase;
+   }
+
+}

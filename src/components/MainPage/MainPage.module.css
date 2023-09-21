@@ -1,0 +1,199 @@
+.block {
+    width: 100vw;
+    box-sizing: border-box;
+    background: #3A294F;
+    padding-left: 113px;
+    padding-right: 100px;
+    padding-bottom: 72px;
+    position: relative;
+}
+
+.icon_wrappers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_icon {
+    margin: auto;
+    margin-top: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+.close_icon {
+    align-self: flex-end;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: #FEFEFE;
+    /*font-family: FuturaBookC;*/
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-right: 112px;
+    padding-left: 113px;
+    margin-top: 128px;
+}
+
+button {
+    display: flex;
+    padding: 12px 40px 8px 40px;
+    gap: 10px;
+    border-radius: 100px;
+    border: 2px solid #FEFEFE;
+    background: none;
+    color: #FEFEFE;
+    cursor: pointer;
+    /*font-family: FuturaDemiC;*/
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 368px;
+    height: 48px;
+    white-space: nowrap;
+}
+.content_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+span {
+    color: #FEFEFE;
+    /*font-family: FuturaBookC;*/
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.span_block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.main_text {
+    margin-top: 148px;
+    color: #bfbfbf;
+    /*font-family: FuturaDemiC;*/
+    font-size: 100px;
+    padding-left: 114px;
+    padding-right: 114px;
+    font-weight: 600;
+}
+
+.link_section {
+    margin-top: 84px;
+    display: flex;
+    gap: 40px;
+}
+
+
+.list a {
+    color: #FEFEFE;
+    /*font-family: FuturaDemiC;*/
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+.link {
+    color: #FEFEFE;
+    /*font-family: FuturaDemiC;*/
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    justify-content: flex-start;
+}
+
+@media (max-width: 414px) {
+    .block {
+        background: url('../../assets/Моб версия_MGT_оригинал-16.png'), lightgray 50% / cover no-repeat;
+        padding-left: 100px;
+        height: 2208px;
+    }
+    .span_block {
+        display: none;
+    }
+
+    .content {
+        margin-top: 330px;
+        flex-direction: column;
+        gap: 182px;
+        padding-left: 505px;
+        align-items: flex-start;
+    }
+
+    .content_right {
+        margin-top: 182px;
+    }
+
+    .main_text {
+        display: none;
+    }
+
+    .list a {
+        color: #FFF;
+        font-size: 60px;
+        font-weight: 600;
+    }
+
+    .main_icon {
+        display: flex;
+        gap: 12px;
+        margin: 0;
+        margin-top: 100px;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    .hide {
+        display: flex;
+    }
+
+    .link_section {
+        display: none;
+    }
+
+    button {
+        height: 83px;
+        font-size: 38px;
+        font-weight: 500;
+    }
+
+    .close_icon svg {
+        width: 82px;
+        height: 82px;
+    }
+}
