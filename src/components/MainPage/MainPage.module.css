@@ -40,7 +40,7 @@ a {
     list-style-type: none;
     text-transform: uppercase;
     color: #FEFEFE;
-    /*font-family: FuturaBookC;*/
+    font-family: "FuturaDemic", sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -93,12 +93,11 @@ span {
 }
 
 .main_text {
-    margin-top: 148px;
+    margin: 148px auto 0;
     color: #bfbfbf;
     /*font-family: FuturaDemiC;*/
-    font-size: 100px;
-    padding-left: 114px;
-    padding-right: 114px;
+    font-size: 131px;
+    padding-left: 1%;
     font-weight: 600;
 }
 
@@ -137,49 +136,83 @@ span {
 
 @media (max-width: 414px) {
     .block {
-        background: url('../../assets/Моб версия_MGT_оригинал-16.png'), lightgray 50% / cover no-repeat;
-        padding-left: 100px;
-        height: 2208px;
+        background: url('../../assets/Моб версия_MGT_оригинал-16.png'), lightgray 50%;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: left;
+        padding: 30px;
+        height: 736px;
     }
     .span_block {
         display: none;
     }
 
     .content {
-        margin-top: 330px;
+        margin-top: 110px;
         flex-direction: column;
-        gap: 182px;
-        padding-left: 505px;
-        align-items: flex-start;
+        gap: 59px;
+        align-items: flex-end;
+        padding: 0 0px 0 0;
     }
 
     .content_right {
-        margin-top: 182px;
+        margin-top: 18px;
     }
 
     .main_text {
         display: none;
     }
 
+    .list {
+        padding-right: 60px;
+        gap: 18px;
+    }
     .list a {
         color: #FFF;
-        font-size: 60px;
+        font-size: 20px;
         font-weight: 600;
+        line-height: 99%;
     }
 
+    .btns {
+        gap: 21px;
+    }
     .main_icon {
         display: flex;
         gap: 12px;
         margin: 0;
-        margin-top: 100px;
+        align-items: center;
+
+        & svg {
+            width: 40px;
+            height: 40px;
+        }
     }
 
     .btn {
-        width: auto;
+        width: 100%;
+        padding: 7px 12px 8px;
+        font-size: 13px;
+        height: 27px;
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
     }
 
+    .close_icon {
+        align-self: center;
+    }
     .hide {
         display: flex;
+        width: 140px;
+        padding: 7px 12px 8px;
+        font-size: 13px;
+        height: 27px;
+        display: flex;
+        font-weight: 500;
+        align-items: center;
+        justify-content: center;
     }
 
     .link_section {
@@ -187,13 +220,13 @@ span {
     }
 
     button {
-        height: 83px;
-        font-size: 38px;
+        font-size: 18px;
         font-weight: 500;
+        width: 100%;
     }
 
     .close_icon svg {
-        width: 82px;
-        height: 82px;
+        width: 28px;
+        height: 28px;
     }
 }

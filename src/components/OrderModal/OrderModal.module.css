@@ -160,11 +160,11 @@ img {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        padding-top: 100px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding: 30px;
         align-items: normal;
         width: 100%;
+        height: 736px;
+        overflow: hidden;
     }
     .img_wrapper {
         display: none;
@@ -172,39 +172,65 @@ img {
 
     .hide {
         display: flex;
+        & svg {
+            height: 40px;
+            width: 47px;
+        }
+    }
+    .burger_icons {
+        gap: 10px;
+        & svg {
+            height: 33px;
+            width: 33px;
+        }
+    }
+
+    .burger_icons span {
+        color: #000;
+        /*font-family: FuturaDemiC;*/
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     .form_span {
         color: #000;
         text-align: center;
         /*font-family: FuturaBookC;*/
-        font-size: 60px;
+        font-size: 18px;
+        max-width: 220px;
+        margin: 0 auto;
         font-weight: 400;
-        line-height: 99%;
+        line-height: 22px;
         text-transform: uppercase;
     }
 
     .btn {
-        border: 4px solid #000000;
-        font-size: 23px;
-        padding: 10px 20px;
+        border: 1.5px solid #000000;
+        font-size: 12px;
+        padding: 7px 16px;
+        max-width: 140px;
         width: auto;
-        margin-top: 48px;
+        height: auto;
+        margin-top: 18px;
         background: none;
     }
 
     form {
-        gap: 65px;
+        gap: 0px;
+        margin-top: 2px;
     }
 
     .send_btn {
         background: #000000;
         color: #FFF;
         /*font-family: FuturaMediumC;*/
-        font-size: 54px;
+        font-size: 18px;
         display: flex;
-        padding: 0;
-        height: 87px;
+        padding: 6px 20px 9px;
+        max-width: 100%;
+        height: 37px;
+        margin-bottom: 22px;
         align-items: center;
         justify-content: center;
         font-weight: 500;
@@ -230,7 +256,7 @@ img {
         color: #000;
         text-align: center;
         /*font-family: FuturaDemiC;*/
-        font-size: 84px;
+        font-size: 26px;
         white-space: nowrap;
         font-weight: 600;
         line-height: 99%;
@@ -240,30 +266,31 @@ img {
     .icons {
         display: flex;
         align-items: center;
-        gap: 160px;
+        gap: 10px;
+        justify-content: space-evenly;
+        width: 100%;
     }
 
     .icons svg {
         color: #000000;
+        height:33px ;
     }
 
     input {
         border-radius: 90px;
-        border: 5px solid rgba(0, 0, 0, 0.40);
+        border: 1.5px solid rgba(0, 0, 0, 0.40);
         color: rgba(0, 0, 0, 0.21);
         /*font-family: FuturaMediumC;*/
-        font-size: 54px;
+        font-size: 18px;
         font-weight: 500;
-        padding-top: 18px;
-        padding-bottom: 28px;
-        padding-left: 59px;
-        height: 87px;
+        padding: 6px 20px 9px;
+        height: 27px;
     }
 
     input::placeholder {
         color: rgba(0, 0, 0, 0.21);
         /*font-family: FuturaMediumC;*/
-        font-size: 54px;
+        font-size: 18px;
         font-weight: 500;
         line-height: 99%;
     }
@@ -271,9 +298,10 @@ img {
 
     .icons_wrapper {
         display: flex;
-        margin-top: 245px;
-        gap: 297px;
+        margin-top: 95px;
+        gap: 29px;
         align-items: center;
+        justify-content: space-evenly;
     }
 
     .next_section {
@@ -281,35 +309,36 @@ img {
         align-items: flex-start;
         justify-content: center;
         gap: 23px;
+        font-size: 18px;
         position: absolute;
-        padding: 0 29px;
-        bottom: 0;
+        padding: 0 10px;
+        /* bottom: 0; */
         left: 50%;
         right: 50%;
         transform: translate(50%, 50%);
     }
 
     .modal_title {
-        margin-top: 286px;
+        margin-top: 85px;
     }
 
     .inputs {
-        gap: 65px;
-        margin-top: 65px;
+        gap: 22px;
+        margin-top: 22px;
     }
 
     .next_btn {
         transform: rotate(270deg);
         color: #000000;
         /*font-family: FuturaDemiC;*/
-        font-size: 47px;
+        font-size: 17px;
         font-weight: 600;
         text-transform: uppercase;
-        padding: 23px 0 0 220px;
+        padding: 10px 0 0 130px;
         margin: 0;
         border: none;
         border-radius: 0;
-        border-top: 12px solid #000000;
+        border-top: 4px solid #000000;
         width: auto;
     }
 
@@ -317,15 +346,18 @@ img {
     .logo_wrapper {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        margin-top: 70px;
-        padding-bottom: 72px;
+        align-items: flex-end;
+        height: 100%;
     }
 
     .logo_section {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .logo_section img {
+        height: 23px;
+        width: auto;
     }
 
     .logo_text {
@@ -340,13 +372,14 @@ img {
 
     .btn_wrapper {
         position: relative;
+        width: 100%;
     }
 
     .logo_span {
         color: #000000;
         text-align: right;
         /*font-family: FuturaBookC;*/
-        font-size: 21px;
+        font-size: 8px;
         /*font-style: italic;*/
         font-weight: 400;
         text-transform: uppercase;

@@ -20,7 +20,7 @@ export const MainPage = () => {
     setIsOpen(false);
   };
 
-  const handleClickOutside = (event: MouseEvent) => {
+  const handleClickOutside = () => {
     closeIcon();
   };
 
@@ -44,6 +44,8 @@ export const MainPage = () => {
           <NavLink to={''}>Главная</NavLink>
           <NavLink to={''}>О нас</NavLink>
           <NavLink to={'portfolio'}>портфолио</NavLink>
+          <NavLink to={'portfolio'}>проекты</NavLink>
+          <NavLink to={'portfolio'}>мероприятия</NavLink>
           <NavLink to={''}>контакты</NavLink>
           <NavLink to={''}>новости</NavLink>
         </div>

@@ -3,7 +3,7 @@ import { FC } from 'react';
 import styles from './OrderModal.module.css';
 import ModalPhoto from '../../assets/Rectangle.png';
 import { PortfolioIcon } from '../../assets/PortfolioIcon';
-import { LogoIcon } from '../../assets/LogoIcon';
+import LogoIcon  from '../../assets/lgwhite.png';
 
 interface Props {
   onClick: () => void;
@@ -130,20 +130,20 @@ export const Order: FC<Props> = ({ onClick }) => {
               d='M1 17L17 1'
               stroke='#1C1C1C'
               stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeLinejoin='round'
             />
             <path
               d='M17 17L1 1'
               stroke='#1C1C1C'
               stroke-linecap='round'
-              stroke-linejoin='round'
+              strokeLinejoin='round'
             />
           </svg>
         </div>
 
         <div className={styles.modal_title}>
           <span className={styles.modal_bold_span}>закажите выступление</span>
-          <span className={styles.modal_span}>ИЛИ ЗАДАЙТЕ НАМ ВОПРОС</span>
+          <span className={styles.modal_span}>ИЛИ ЗАДАЙТЕ ВОПРОС</span>
         </div>
 
         <span className={styles.span}>
@@ -270,8 +270,7 @@ export const Order: FC<Props> = ({ onClick }) => {
 
       <div className={`${styles.logo_wrapper} ${styles.hide}`}>
         <div className={styles.logo_section}>
-          <LogoIcon />
-          <span className={styles.logo_text}>студия веб-дизайна</span>
+          <img src={LogoIcon} alt="" />
         </div>
         <div className={styles.hide}>
           <span className={styles.logo_span}>

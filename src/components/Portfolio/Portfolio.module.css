@@ -11,6 +11,9 @@
 }
 
 .icon_wrappers svg {
+    path {
+        fill: #ffffff;
+    }
     color: #1C1C1C;
     width: 122.93px;
     height: 80px;
@@ -66,7 +69,7 @@
 .content {
     display: flex;
     align-items: center;
-    margin-top: 42px;
+    margin-top: 52px;
     gap: 91px;
 }
 
@@ -188,6 +191,9 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 83px;
+    & img {
+        display: none;
+    }
 }
 .logo_text {
     color: #8D8D8D;
@@ -201,11 +207,14 @@ a {
 
 @media (max-width: 414px) {
     .block {
-        padding-right: 100px;
-        padding-left: 100px;
-        background: url('../../assets/Моб версия_MGT_оригинал-04.png'), lightgray 50% / cover no-repeat;
-        padding-bottom: 0;
+        padding: 30px;
+        background: url('../../assets/Моб версия_MGT_оригинал-04.png'), lightgray 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
         position: relative;
+        height: 736px;
+        overflow: hidden;
     }
 
    .footer {
@@ -221,7 +230,8 @@ a {
    }
 
    ul {
-       margin-top: 293px;
+       margin-top: 2px;
+       gap: 5px;
    }
 
    .selected {
@@ -232,7 +242,7 @@ a {
    li {
        color: #FFF;
        /*font-family: FuturaDemiC;*/
-       font-size: 84px;
+       font-size: 26px;
        font-weight: 600;
        line-height: 99%;
        text-transform: uppercase;
@@ -242,6 +252,14 @@ a {
        display: flex;
        gap: 12px;
        align-items: center;
+    
+       & svg {
+        height: 40px;
+        width: 49px;
+        & path {
+            fill: #fff;
+        }
+       }
    }
 
    .icon_wrappers {
@@ -250,6 +268,13 @@ a {
 
    .hide {
        display: flex;
+       & svg {
+        height: 30px;
+        width: 30px;
+        path {
+            fill: #fff;
+        }
+       }
    }
 
    .logo_wrapper {
@@ -257,7 +282,11 @@ a {
        justify-content: space-between;
        align-items: center;
        margin-top: 70px;
-       padding-bottom: 94px;
+       padding-bottom: 31px;
+       position: absolute;
+       right: 10px;
+       left: 10px;
+       bottom: 0;
    }
 
    .phone_number {
@@ -265,13 +294,13 @@ a {
    }
 
    .btn {
-       width: 334px;
-       height: 71px;
+       height: 25px;
        background: none;
-       padding: 0;
+       padding: 0 8px;
        color: #FFFFFF;
-       border: 1px solid #FFFFFF;
+       border: 2px solid #FFFFFF;
        display: flex;
+       font-size: 10px;
        align-items: center;
        justify-content: center;
    }
@@ -279,14 +308,17 @@ a {
    .icons {
        display: flex;
        align-items: center;
-       gap: 160px;
+       justify-content: space-evenly;
+       width: 100%;
    }
 
    .icons_wrapper {
-       margin-top: 934px;
+       margin-top: 9px;
        display: flex;
-       gap: 297px;
+        justify-content: space-evenly;
        align-items: center;
+       height: 90%;
+       gap: 30px;
    }
 
    .next_section {
@@ -296,9 +328,10 @@ a {
        padding: 0 29px;
        gap: 23px;
        position: absolute;
-       left: 50%;
+       left: 48%;
        right: 50%;
-       transform: translate(50%, 50%);
+       bottom: 0;
+       /* transform: translate(50%, 50%); */
    }
 
    .line {
@@ -315,30 +348,45 @@ a {
        transform: rotate(270deg);
        color: #FFF;
        /*font-family: FuturaDemiC;*/
-       font-size: 47px;
+       font-size: 14px;
        font-weight: 600;
        text-transform: uppercase;
-       padding: 0 0 0 220px;
+       padding: 0 0 0 140px;
        margin: 0;
        border: none;
-       border-top: 12px solid white;
-       padding-top: 23px;
+       border-top: 4px solid white;
+       padding-top: 4px;
        border-radius: 0;
    }
 
+   .menu {
+    gap: 10px;
+    padding: 0;
+   }
+
    .menu span {
-   color: #FFFFFF;
+    color: #FFFFFF;
+    font-size: 18px;
    }
 
    .logo_section {
        margin: 0;
+       max-width: 71px;
+       & svg {
+        display: none;
+       }
+       & img {
+        display: block;
+        width: 71px;
+        height: auto;
+       }
    }
 
    .logo_span {
        color: #FFF;
        text-align: right;
        /*font-family: FuturaBookC;*/
-       font-size: 14px;
+       font-size: 8px;
        /*font-style: italic;*/
        font-weight: 400;
        text-transform: uppercase;
